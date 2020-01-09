@@ -1,0 +1,25 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 1010
+spring:
+  application:
+    name: account-transaction
+  datasource:
+    password: postgres
+    url: jdbc:postgresql://localhost/postgres
+    username: postgres
+  h2:
+    console:
+      enabled: true
+  jpa:
+    generate-ddl: true
+    show-sql: true
+feign:  hystrix:    enabled: true
+ribbon:
+  eureka:
+    enabled: true
+  restclient:
+    enabled: true
