@@ -8,9 +8,10 @@ spring:
   application:
     name: account-transaction
   datasource:
-    password: postgres
-    url: jdbc:postgresql://localhost/postgres
-    username: postgres
+    password: microservice1453
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: microservice
+    driver-class-name: oracle.jdbc.OracleDriver
   h2:
     console:
       enabled: true
