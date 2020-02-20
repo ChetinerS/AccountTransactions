@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,6 +16,8 @@ import com.ykb.trx.dto.AccountTransactionDTO;
 import com.ykb.trx.dto.TransactionDTO;
 import com.ykb.trx.service.IAccountService;
 import com.ykb.trx.service.ITransactionsService;
+
+@RequestMapping("api/v1/account-transaction")
 @RestController
 public class AccountTransactionController {
 
